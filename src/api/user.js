@@ -23,9 +23,26 @@ export function addUser (data) {
   })
 }
 
+// 根据 ID 查询用户信息
 export function EditUser (id) {
   return request({
     url: `/users/${id}`,
     method: 'GET'
+  })
+}
+
+// 编辑用户提交
+export function EditUserInfo (id, data) {
+  return request({
+    url: `/users/${id}`,
+    method: 'PUT',
+    data
+  })
+}
+// 删除用户
+export function deleteUserInfo (id) {
+  return request({
+    url: `/users/${id}`,
+    method: 'delete'
   })
 }
