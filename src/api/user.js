@@ -46,3 +46,22 @@ export function deleteUserInfo (id) {
     method: 'delete'
   })
 }
+// 获取角色用户列表
+export function getRightsRolesList () {
+  return request({
+    url: 'roles',
+    method: 'get'
+  })
+}
+// 分配用户角色
+export function userRolesList (id, rid) {
+  // console.log(this.userInfo.id)
+  // console.log(this.selectRoleId)
+  return request({
+    url: `users/${id}/role`,
+    method: 'PUT',
+    data: {
+      rid
+    }
+  })
+}

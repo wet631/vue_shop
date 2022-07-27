@@ -24,9 +24,18 @@ const routes = [
       {
         path: '/users',
         component: () => import('@/components/User/Users-one')
+      },
+      {
+        path: '/rights',
+        component: () => import('@/components/power/Rights-one.vue')
+      },
+      {
+        path: '/roles',
+        component: () => import('@/components/power/Roles-two')
       }
     ]
   }
+
 ]
 const router = new Router({
   routes
