@@ -9,7 +9,7 @@ import axios from 'axios'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
+import TreeTable from 'vue-table-with-tree-grid'
 Vue.use(ElementUI)
 
 // 配置请求根路径
@@ -22,7 +22,7 @@ axios.interceptors.request.use(config => {
 })
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
-
+Vue.component('tree-table', TreeTable)
 new Vue({
   router,
   render: (h) => h(App)
