@@ -36,6 +36,10 @@ const routes = [
       {
         path: '/categories',
         component: () => import('@/components/goods/Cate-one')
+      },
+      {
+        path: '/params',
+        component: () => import('@/components/goods/params-two.vue')
       }
 
     ]

@@ -11,7 +11,7 @@
    <el-card>
     <el-row>
       <el-col>
-        <el-button type="primary" @click="showAdd">添加分类</el-button>
+        <el-button  class="addBtn" type="primary" @click="showAdd">添加分类</el-button>
       </el-col>
     </el-row>
     <!-- 表格 -->
@@ -215,5 +215,8 @@ export default {
 }
 .el-cascader{
   width: 100%;
+}
+.addBtn{
+  margin-bottom: 15px;
 }
 </style>

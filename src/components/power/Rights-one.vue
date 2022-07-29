@@ -40,7 +40,7 @@ export default {
       const { data: res } = await rigthsList()
       console.log(res)
       if (res.meta.status !== 200) {
-        return this.$$message.console.error('获取用户列表失败')
+        return this.$message.console.error('获取用户列表失败')
       }
       this.rightsList = res.data
     }
